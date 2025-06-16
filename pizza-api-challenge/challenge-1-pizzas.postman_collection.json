@@ -1,0 +1,94 @@
+{
+  "info": {
+    "_postman_id": "pizza-api-challenge-collection-2025",
+    "name": "Pizza API Challenge",
+    "description": "Postman collection for testing the Pizza API endpoints.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Restaurants",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/restaurants",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["restaurants"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Restaurant By ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/restaurants/1",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["restaurants", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Restaurant By ID",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/restaurants/1",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["restaurants", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Pizzas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/pizzas",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["pizzas"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create RestaurantPizza",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"price\": 5,\n  \"pizza_id\": 1,\n  \"restaurant_id\": 2\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/restaurant_pizzas",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["restaurant_pizzas"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
